@@ -1,20 +1,29 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Header = () => {
   return (
-    <header className="py-6 flex justify-between">
-      <h1 className="text-2xl md:text-4xl font-black text-orange-400">
-        Techie
-      </h1>
+    <header className="py-6 flex justify-between px-4">
+      <Link href="/">
+        <a>
+          <h1 className="text-2xl md:text-4xl font-black text-orange-400">
+            Techie
+          </h1>
+        </a>
+      </Link>
       <ul className="flex items-center">
-        <li className="mx-2 rounded px-2 py-1 hover:bg-gray-900 ">
-          {' '}
-          <a href="#">Crypto</a>
-        </li>
-        <li className="rounded px-2 py-1 hover:bg-gray-900 ">
-          {' '}
-          <a href="#">News</a>
-        </li>
+        <Link href="/">
+          <a>
+            <li className="mx-2 rounded px-2 py-1 hover:bg-gray-900 ">
+              Crypto{' '}
+            </li>
+          </a>
+        </Link>
+        <Link href="/news">
+          <a>
+            <li className="rounded px-2 py-1 hover:bg-gray-900 ">News</li>
+          </a>
+        </Link>
       </ul>
     </header>
   );

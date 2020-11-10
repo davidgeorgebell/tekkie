@@ -19,8 +19,8 @@ export const FilterForms = ({
     <form className="flex flex-wrap py-10">
       <div className="container max-w-2xl pb-6 pt-1">
         <input
-          className="w-64 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline "
-          placeholder="Search crypto coin"
+          className="w-64 shadow appearance-none border border-teal-400 rounded py-2 px-3 text-gray-100 leading-tight focus:outline-none focus:shadow-outline bg-gray-900 "
+          placeholder="Search crypto coin "
           type="text"
           onChange={handleSearchFilter}
         />
