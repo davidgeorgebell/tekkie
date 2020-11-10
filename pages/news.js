@@ -15,8 +15,8 @@ const News = () => {
     <Layout title="news">
       <h2 className="text-2xl md:text-4xl px-4 py-10">Top Stories</h2>
       <ul>
-        {storyIds.map(storyId => (
-          <Stories storyId={storyId} />
+        {storyIds.map((storyId, index) => (
+          <Stories key={index} storyId={storyId} />
         ))}
       </ul>
     </Layout>
