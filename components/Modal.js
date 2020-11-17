@@ -13,7 +13,7 @@ export const Modal = ({ coin, setSelectedCrypto }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}>
       <motion.div
-        className="bg-gray-900 max-w-xl h-64 my-32 py-56 mx-auto cursor-default rounded-xl shadow-xl border border-teal-400 "
+        className="bg-gray-900 max-w-xl h-64 my-32 py-56 mx-2 md:mx-auto cursor-default rounded-xl shadow-xl border border-teal-400 "
         initial={{ y: '-100vh' }}
         animate={{ y: 0 }}>
         <ul className="flex flex-col items-center justify-center h-full ">

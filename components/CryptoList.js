@@ -22,7 +22,7 @@ export const CryptoList = ({ crypto, sorter, currency, setSelectedCrypto }) => {
                   loading="lazy"
                 />
               </div>
-              <h3 className="text-3xl  font-black pl-2 text-orange-400 py-3">
+              <h3 className="text-3xl font-black pl-2 text-orange-400 py-3">
                 {c.name}
               </h3>
               <p className="text-lg">
@@ -40,6 +40,7 @@ export const CryptoList = ({ crypto, sorter, currency, setSelectedCrypto }) => {
                 <span className="font-bold">Price Change:</span>
                 <span
                   className={
+                    c.price_change_percentage_24h &&
                     c.price_change_percentage_24h.toString().includes('-')
                       ? 'text-red-600'
                       : 'text-green-600'
